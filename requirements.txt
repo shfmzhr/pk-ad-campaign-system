@@ -1,3 +1,4 @@
 imageio-ffmpeg
 requests
 python-dotenv
+pandas

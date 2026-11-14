@@ -1,0 +1,296 @@
+{
+  "source": "pk-clothing-ad-sentiment predictions (aggregated counts only, no comment text)",
+  "excluded_likely_turkish": 15,
+  "overall": {
+    "n": 1962,
+    "sentiment_share": {
+      "positive": 0.634,
+      "neutral": 0.347,
+      "negative": 0.019
+    },
+    "language_share": {
+      "english": 0.883,
+      "roman_urdu": 0.07,
+      "urdu_script": 0.017,
+      "emoji_only": 0.03
+    },
+    "asks_question_or_request_share": 0.166,
+    "topics": {
+      "price": {
+        "mentions": 13,
+        "share_of_comments": 0.007,
+        "sentiment_counts": {
+          "positive": 3,
+          "neutral": 4,
+          "negative": 6
+        }
+      },
+      "design_clothes": {
+        "mentions": 131,
+        "share_of_comments": 0.067,
+        "sentiment_counts": {
+          "positive": 109,
+          "neutral": 20,
+          "negative": 2
+        }
+      },
+      "quality": {
+        "mentions": 10,
+        "share_of_comments": 0.005,
+        "sentiment_counts": {
+          "positive": 5,
+          "neutral": 1,
+          "negative": 4
+        }
+      },
+      "delivery_availability": {
+        "mentions": 11,
+        "share_of_comments": 0.006,
+        "sentiment_counts": {
+          "positive": 5,
+          "neutral": 5,
+          "negative": 1
+        }
+      },
+      "music": {
+        "mentions": 823,
+        "share_of_comments": 0.419,
+        "sentiment_counts": {
+          "positive": 402,
+          "neutral": 416,
+          "negative": 5
+        }
+      },
+      "model_or_actress": {
+        "mentions": 55,
+        "share_of_comments": 0.028,
+        "sentiment_counts": {
+          "positive": 44,
+          "neutral": 4,
+          "negative": 7
+        }
+      }
+    }
+  },
+  "brands": {
+    "Gul Ahmed": {
+      "n": 647,
+      "sentiment_share": {
+        "positive": 0.413,
+        "neutral": 0.572,
+        "negative": 0.015
+      },
+      "language_share": {
+        "english": 0.915,
+        "roman_urdu": 0.073,
+        "urdu_script": 0.008,
+        "emoji_only": 0.005
+      },
+      "asks_question_or_request_share": 0.338,
+      "topics": {
+        "price": {
+          "mentions": 10,
+          "share_of_comments": 0.015,
+          "sentiment_counts": {
+            "positive": 1,
+            "neutral": 4,
+            "negative": 5
+          }
+        },
+        "design_clothes": {
+          "mentions": 37,
+          "share_of_comments": 0.057,
+          "sentiment_counts": {
+            "positive": 25,
+            "neutral": 12,
+            "negative": 0
+          }
+        },
+        "quality": {
+          "mentions": 6,
+          "share_of_comments": 0.009,
+          "sentiment_counts": {
+            "positive": 2,
+            "neutral": 1,
+            "negative": 3
+          }
+        },
+        "delivery_availability": {
+          "mentions": 7,
+          "share_of_comments": 0.011,
+          "sentiment_counts": {
+            "positive": 2,
+            "neutral": 5,
+            "negative": 0
+          }
+        },
+        "music": {
+          "mentions": 445,
+          "share_of_comments": 0.688,
+          "sentiment_counts": {
+            "positive": 159,
+            "neutral": 283,
+            "negative": 3
+          }
+        },
+        "model_or_actress": {
+          "mentions": 4,
+          "share_of_comments": 0.006,
+          "sentiment_counts": {
+            "positive": 3,
+            "neutral": 1,
+            "negative": 0
+          }
+        }
+      }
+    },
+    "Khaadi": {
+      "n": 1189,
+      "sentiment_share": {
+        "positive": 0.738,
+        "neutral": 0.242,
+        "negative": 0.02
+      },
+      "language_share": {
+        "english": 0.865,
+        "roman_urdu": 0.066,
+        "urdu_script": 0.024,
+        "emoji_only": 0.045
+      },
+      "asks_question_or_request_share": 0.082,
+      "topics": {
+        "price": {
+          "mentions": 3,
+          "share_of_comments": 0.003,
+          "sentiment_counts": {
+            "positive": 2,
+            "neutral": 0,
+            "negative": 1
+          }
+        },
+        "design_clothes": {
+          "mentions": 84,
+          "share_of_comments": 0.071,
+          "sentiment_counts": {
+            "positive": 76,
+            "neutral": 7,
+            "negative": 1
+          }
+        },
+        "quality": {
+          "mentions": 3,
+          "share_of_comments": 0.003,
+          "sentiment_counts": {
+            "positive": 2,
+            "neutral": 0,
+            "negative": 1
+          }
+        },
+        "delivery_availability": {
+          "mentions": 3,
+          "share_of_comments": 0.003,
+          "sentiment_counts": {
+            "positive": 2,
+            "neutral": 0,
+            "negative": 1
+          }
+        },
+        "music": {
+          "mentions": 327,
+          "share_of_comments": 0.275,
+          "sentiment_counts": {
+            "positive": 198,
+            "neutral": 127,
+            "negative": 2
+          }
+        },
+        "model_or_actress": {
+          "mentions": 44,
+          "share_of_comments": 0.037,
+          "sentiment_counts": {
+            "positive": 36,
+            "neutral": 1,
+            "negative": 7
+          }
+        }
+      }
+    },
+    "Sana Safinaz": {
+      "n": 126,
+      "sentiment_share": {
+        "positive": 0.794,
+        "neutral": 0.183,
+        "negative": 0.024
+      },
+      "language_share": {
+        "english": 0.881,
+        "roman_urdu": 0.095,
+        "urdu_script": 0.0,
+        "emoji_only": 0.024
+      },
+      "asks_question_or_request_share": 0.079,
+      "topics": {
+        "price": {
+          "mentions": 0,
+          "share_of_comments": 0.0,
+          "sentiment_counts": {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+          }
+        },
+        "design_clothes": {
+          "mentions": 10,
+          "share_of_comments": 0.079,
+          "sentiment_counts": {
+            "positive": 8,
+            "neutral": 1,
+            "negative": 1
+          }
+        },
+        "quality": {
+          "mentions": 1,
+          "share_of_comments": 0.008,
+          "sentiment_counts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0
+          }
+        },
+        "delivery_availability": {
+          "mentions": 1,
+          "share_of_comments": 0.008,
+          "sentiment_counts": {
+            "positive": 1,
+            "neutral": 0,
+            "negative": 0
+          }
+        },
+        "music": {
+          "mentions": 51,
+          "share_of_comments": 0.405,
+          "sentiment_counts": {
+            "positive": 45,
+            "neutral": 6,
+            "negative": 0
+          }
+        },
+        "model_or_actress": {
+          "mentions": 7,
+          "share_of_comments": 0.056,
+          "sentiment_counts": {
+            "positive": 5,
+            "neutral": 2,
+            "negative": 0
+          }
+        }
+      }
+    }
+  },
+  "caveats": [
+    "Sentiment is predicted by a model trained on 570 hand-labeled comments; negative comments are under-detected.",
+    "Source is YouTube comments on three brand channels; commenter location is unknown.",
+    "Khaadi data comes from a single music-led campaign, so brand differences partly reflect campaign type.",
+    "Topic counts are keyword matches, not aspect-based sentiment."
+  ]
+}
