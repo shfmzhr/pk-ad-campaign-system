@@ -120,6 +120,36 @@ def add_overlay(base, brand, headline, cta, label="AI-generated"):
     return Image.alpha_composite(img, layer).convert("RGB")
 
 
+def prompt_ladder(brief, inputs):
+    product = inputs.get("product", "t-shirt")
+    style = inputs.get("visual_style", "retro pink scrapbook poster, y2k, glitter stickers")
+    return [
+        ("planned prompt", clean_prompt(brief["image_prompt"])),
+        ("product on a hanger",
+         f"A {product} hanging on a hanger against a plain pastel wall, {style}, "
+         "studio product photography, sharp focus, high quality"),
+        ("flat lay",
+         f"A {product} laid flat on a plain pastel background, {style}, "
+         "soft studio lighting, high quality"),
+    ]
+
+
+def generate_with_fallback(prompts, path, seed):
+    last = ""
+    for label, prompt in prompts:
+        print(f"Generating image ({label})...")
+        try:
+            make_ad.generate_image(prompt, path, seed=seed)
+            return prompt
+        except SystemExit as e:
+            last = str(e)
+            if "NSFW" in last or "8007" in last:
+                print("  Rejected by the image safety filter, trying a simpler prompt...")
+                continue
+            raise
+    raise SystemExit("Every prompt was rejected by the image safety filter.\n" + last)
+
+
 def plan(passthrough):
     cmd = [sys.executable, str(ROOT / "src" / "plan_campaign.py"), *passthrough]
     res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
@@ -163,9 +193,8 @@ def main():
         shutil.copy(src, raw)
         print(f"Using your picture: {src.name}")
     else:
-        prompt = clean_prompt(brief["image_prompt"])
-        print(f"Generating image from: {prompt}")
-        make_ad.generate_image(prompt, raw, seed=args.seed)
+        used = generate_with_fallback(prompt_ladder(brief, inputs), raw, args.seed)
+        print(f"Image prompt used: {used}")
 
     base = Image.open(raw)
     text_parts = f"{brief['headline']} {brief['call_to_action']}"
