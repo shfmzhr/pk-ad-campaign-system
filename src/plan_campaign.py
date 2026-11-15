@@ -166,11 +166,25 @@ def main():
                     help="the only place to buy or ask (for example 'Instagram DM')")
     ap.add_argument("--visual-style", default="retro pink scrapbook poster, y2k, glitter stickers")
     ap.add_argument("--model", default=None)
+    ap.add_argument("--use-feedback", action="store_true",
+                    help="add a cautious line from demo-feed reactions when the data is clear")
     args = ap.parse_args()
 
     model = args.model or DEFAULT_MODELS[args.language]
     ins = json.loads(INSIGHTS.read_text(encoding="utf-8"))
     label, facts, guide, why_text = build_facts(ins, args.reference)
+
+    if args.use_feedback:
+        import db
+        import feedback
+        lines = [i["planner"] for i in feedback.insights(db.list_ads()) if i["planner"]]
+        if lines:
+            guide.extend(lines)
+            why_text += " Demo-feed signal: " + " ".join(lines)
+            print("Using demo-feed reactions: " + " ".join(lines))
+        else:
+            print("No clear feedback signal yet (needs 2+ ad groups with "
+                  f"{feedback.MIN_VIEWERS}+ viewers each), so nothing was added.")
 
     system = (
         "You are a marketing copywriter for a small fashion brand in Pakistan. "
