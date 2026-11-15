@@ -1,0 +1,44 @@
+{
+  "created": "2026-11-14 16:43:06",
+  "model": "@cf/google/gemma-4-26b-a4b-it",
+  "inputs": {
+    "brand_name": "Shifi",
+    "product": "pink graphic tee",
+    "goal": "build awareness for a new collection",
+    "tone": "playful, confident",
+    "language": "english",
+    "reference": "overall",
+    "channel": "link in bio",
+    "visual_style": "retro pink scrapbook poster, y2k, glitter stickers"
+  },
+  "audience_facts": [
+    "Source: 1962 YouTube comments on all three brands combined video ads.",
+    "Predicted sentiment: 63% positive, 35% neutral, 2% negative (negative comments are under-detected).",
+    "42% of comments mention the song or music.",
+    "7% mention the clothes or design.",
+    "1% mention price, 0% quality, 1% delivery or availability.",
+    "17% of comments contain a question or request."
+  ],
+  "guidance": [
+    "Viewers talk a lot about music in video ads, so choose the music mood on purpose. Do not claim the product is for music lovers.",
+    "Price is rarely discussed, so do not lead with price; evidence for price messaging is weak.",
+    "Few comments discuss the clothes, so show the product clearly; evidence on design preferences is thin."
+  ],
+  "brief": {
+    "headline": "Shifi's new pink swag!",
+    "caption": "Retro vibes and glittery style! This Shifi pink graphic tee is seriously awesome. The new collection is here!",
+    "call_to_action": "Check the link in bio!",
+    "hashtags": [
+      "#Shifi",
+      "#PinkVibes",
+      "#Y2KStyle",
+      "#GraphicTee"
+    ],
+    "image_prompt": "A model wearing a pink graphic tee, product clearly visible, simple background, retro pink scrapbook poster style, y2k aesthetic, glitter stickers, no extra props, no text, no logos",
+    "music_mood": "Upbeat Y2K pop synth",
+    "why": "Based on 1,962 YouTube comments on all three brands combined video ads (not this brand's own audience): 42% mention the music, so the music mood is a deliberate choice. Only 1% mention price, so the ad does not lead with price (the evidence either way is weak). Only 7% discuss the clothes, so the product is shown clearly."
+  },
+  "language_check": "n/a",
+  "disclosure": "AI-generated ad",
+  "variant_of": "brief_20261114_164306.json"
+}
